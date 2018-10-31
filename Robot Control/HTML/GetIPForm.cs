@@ -41,7 +41,10 @@ namespace Robot_Control.HTML
             if (tb.Text == "")
                 tb.Text = "0";
             else if (Int32.TryParse(tb.Text, out ip) && ip > -1 && ip < 256)
+            {
                 ips[i] = ip;
+                tb.Text = ips[i].ToString();
+            }
             else
                 tb.Text = ips[i].ToString();
             tb.SelectionStart = tb.Text.Length;
