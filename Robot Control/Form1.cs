@@ -55,7 +55,6 @@ namespace Robot_Control
             gamepad = new GamepadInterface(robot);
             gamepad.addMenu(gamepadToolStripMenuItem);
             gamepad.addStatusStrip(SSLgp1, SSLgp2, SSLgp3, SSLgp4);
-
         }
     }
 }
