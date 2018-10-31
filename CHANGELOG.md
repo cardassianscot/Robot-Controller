@@ -1,14 +1,13 @@
 # Road map
 
-- Control an Arduino (or Raspberry Pi) powered Robot via 
+- [x] Control an Arduino (or Raspberry Pi) powered Robot via 
   - [x] mouse and buttons
-  - [ ] XBox 360 gamepad
-  - [ ] keyboard
+  - [x] XBox 360 gamepad
+  - [x] keyboard
 - [x] Use Bluetooth serial for control
 - [ ] Use http for control
 - [x] Move forwards, backwards, left and right 
-- [x] Take a sensor reading and display results
-- [ ] Graphically display radar data 
+- [x] Take a sensor reading and display results 
 - [ ] Graphically program a line following reponse 
 
 Features that have a checkmark are complete and available for
@@ -21,6 +20,12 @@ the versions are linked to each post.
 # Change log
 
 These are the changes to each version that has been released. 
+
+## 1.0
+- [x] Gamepad working
+- [x] keyboard working
+- [ ] http control implemented by not successfully tested, 
+      may be due to http controlled robot, needs further testing 
 
 ## 0.4
 - [x] Refactor code to use an Arduino class 
