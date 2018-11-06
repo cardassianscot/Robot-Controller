@@ -4,6 +4,10 @@
 
 See the [change log](CHANGELOG.md) for changes and road map.
 
+## Install
+
+To install run [setup.exe](https://github.com/cardassianscot/Robot-Controller/raw/master/Robot%20Control/Publish/setup.exe)
+
 ## Features
 
 Current Features
