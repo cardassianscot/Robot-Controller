@@ -73,13 +73,13 @@ namespace Robot_Control.Input
             {
                 b.BackColor = SystemColors.ControlDark;
                 b.Text = "Stop";
-                robot.SendString("F");
+                robot.ChangeDirection("follow");
             } 
             else
             {
                 b.BackColor = SystemColors.Control;
                 b.Text = "Follow";
-                robot.SendString("s");
+                robot.ChangeDirection("stop");
             }
         }
 
