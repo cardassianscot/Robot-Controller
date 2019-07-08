@@ -159,10 +159,10 @@
             // 
             // btnSensor
             // 
-            this.btnSensor.Location = new System.Drawing.Point(677, 299);
+            this.btnSensor.Location = new System.Drawing.Point(656, 299);
             this.btnSensor.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.btnSensor.Name = "btnSensor";
-            this.btnSensor.Size = new System.Drawing.Size(125, 66);
+            this.btnSensor.Size = new System.Drawing.Size(154, 66);
             this.btnSensor.TabIndex = 6;
             this.btnSensor.Text = "Sensor";
             this.btnSensor.UseVisualStyleBackColor = true;
