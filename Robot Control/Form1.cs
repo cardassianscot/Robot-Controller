@@ -51,6 +51,7 @@ namespace Robot_Control
             buttons = new Buttons(robot, btnFwd, btnBack, btnLeft, btnRight);
             buttons.addSensor(btnSensor);
             buttons.addSend(btnSend, txtBoxInstructions);
+            buttons.addFollow(btnFollow, btnCallibrate);
 
             gamepad = new GamepadInterface(robot);
             gamepad.addMenu(gamepadToolStripMenuItem);

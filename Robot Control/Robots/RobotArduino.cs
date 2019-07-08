@@ -18,7 +18,8 @@ namespace Robot_Control.Robots
             {"left","l" },
             {"right","r" },
             {"stop", "s" },
-            {"follow", "v" }
+            {"follow", "F" },
+            {"callibrate","C" }
         };
 
         private Dictionary<string, string> direction9 = new Dictionary<string, string>()
@@ -32,7 +33,8 @@ namespace Robot_Control.Robots
             {"fwdRight","r" },
             {"backLeft","k" },
             {"backRight","t" },
-            {"follow","v" }
+            {"follow","F" },
+            {"callibrate","C" }
         };
 
         public RobotArduino(Arduino a, Robot robot)

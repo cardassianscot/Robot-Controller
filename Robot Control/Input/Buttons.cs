@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Robot_Control.Robots;
+using System.Drawing;
 
 namespace Robot_Control.Input
 {
@@ -20,7 +21,7 @@ namespace Robot_Control.Input
             direction[fwd.Name] = "fwd";
             direction[back.Name] = "back";
             direction[left.Name] = "left";
-            direction[right.Name] = "right";    
+            direction[right.Name] = "right";
 
             fwd.MouseDown += MouseDown;
             fwd.MouseUp += MouseUp;
@@ -58,5 +59,29 @@ namespace Robot_Control.Input
         {
             robot.Reading();
         }
+
+        public void addFollow(Button follow, Button callibrate)
+        {
+            callibrate.Click += (sender, e) => { robot.SendString("C"); };
+            follow.Click += Follow;
+        }
+
+        private void Follow(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if (b.Text == "Follow")
+            {
+                b.BackColor = SystemColors.ControlDark;
+                b.Text = "Stop";
+                robot.SendString("F");
+            } 
+            else
+            {
+                b.BackColor = SystemColors.Control;
+                b.Text = "Follow";
+                robot.SendString("s");
+            }
+        }
+
     }
 }
